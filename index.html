@@ -1,126 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>The Source Magazine</title>
-<style>
-.demo-card-wide.mdl-card {
-  margin-left:5px;
-  margin-top: 10px;
-  width: 97%;
+<link rel="stylesheet" type="text/css" href="css/material.green-orange.min.css">
+<script src="js/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style type="text/css">
+.input {
+	width:100%;
+	border-radius:2px;
+	border: 1px solid gray;
+	height:25px;
+
 }
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-/*  background: url('img/img3.jpg') center / cover;*/
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
+textarea {
+	width: 100%;
+	height: 60px;
 }
 </style>
-
-<link href="material.green-orange.min.css" rel="stylesheet" type="text/css">
- <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
-<script src="material.min.js"/></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body style="background:#ECF0F1;">
-<!-- Simple header with fixed tabs. -->
+<body><!-- Simple header with fixed tabs. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
             mdl-layout--fixed-tabs">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">The Source Magazine</span>
+      <span class="mdl-layout-title">
+
+      	<img src="img/logo.png" style="width:30px;"/>TRAVELLER
+      </span>
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">All News</a>
-      <a href="#fixed-tab-2" class="mdl-layout__tab">Categories</a>
-      <a href="#fixed-tab-3" class="mdl-layout__tab">Account</a>
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active" style="color:#fff;font-weight:bold;">HOME</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab" style="color:#fff;font-weight:bold;">ACCOMMODATION</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab" style="color:#fff;font-weight:bold;">PLACES</a>
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">My Account</span>
-    <img src="http://mysaco.com/source/img/img3.jpg" style="height:200px;width:100%;"/>
-
-    <p style="font-family:open sans;font-size:20px;margin:10px;font-weight:bold;">
-      Roy Kusemererwa
-      </p>
-      <hr>
-      <p style="font-family:open sans;font-size:17px;margin:10px;">
-        <i class="material-icons" style="position:absolute;margin-top:0px;">account_box</i>&nbsp&nbsp&nbsp&nbsp&nbspMy Profile
-      </p>
-
-<hr>
-    <p style="font-family:open sans;font-size:17px;margin:10px;">
-        <i class="material-icons" style="position:absolute;margin-top:0px;">settings</i>&nbsp&nbsp&nbsp&nbsp&nbspSettings
-      </p>
-
-    
-<hr>
-      <p style="font-family:open sans;font-size:17px;margin:10px;">
-        <i class="material-icons" style="position:absolute;margin-top:0px;">reply</i>&nbsp&nbsp&nbsp&nbsp&nbspFeedback
-      </p>
-
-    
-    
+    <span class="mdl-layout-title">
+    	<img src="img/logo.png" style="width:20%;"/>
+    	TRAVELLER
+    </span>
+    <hr>
+    <nav class="mdl-navigation">
+         <a class="mdl-navigation__link" href="act.php">&nbsp<p style="font-family:open sans, sans-serif; font-size:16px; margin-left:30px; margin-top:-30px;">Home</p></a>
+      <a class="mdl-navigation__link" href="#">&nbsp<p style="font-family:open sans, sans-serif; font-size:16px; margin-left:30px; margin-top:-30px;">Accommodation</p></a>
+       <a class="mdl-navigation__link" href="withdraw.php">&nbsp<p style="font-family:open sans, sans-serif; font-size:16px; margin-left:30px; margin-top:-30px;">Attractions</p></a>
+      <a class="mdl-navigation__link" href="all.php">&nbsp<p style="font-family:open sans, sans-serif; font-size:16px; margin-left:30px; margin-top:-30px;">Hotels</p></a>
+      <a class="mdl-navigation__link" href="l.php">&nbsp<p style="font-family:open sans, sans-serif; font-size:16px; margin-left:30px; margin-top:-30px;">Restaurants</p></a>
+      <a class="mdl-navigation__link" href="report.php">&nbsp<p style="font-family:open sans, sans-serif; font-size:16px; margin-left:30px; margin-top:-30px;">Shopping</p></a>
+    </nav>
   </div>
+
+
   <main class="mdl-layout__content">
     <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
       <div class="page-content">
-     <!--main Content goes here -->
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title" style="background: url('http://mysaco.com/source/img/img3.jpg') center / cover;">
-    <h2 class="mdl-card__title-text">Welcome</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Read more
-    </a>
-  </div>
-  <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
-  </div>
-</div>
+        <div class="" style="position:absolute;width:100%;height:230px;right:0;left:0;background:url(img/t1.jpg) center / cover;">
+          <p style="position:aabsolute;font-family:open sans, sans-serif;color:#fff;font-size:33px;margin-top:30px;margin-left:5px;">Welcome to Traveller</p>
+          <p style="font-family:open sans light;font-size:20px;margin:10px;color:#fff;">Providing Travel Advice for your premium trips</p>
+        </div>
+
+        
+        <div id="" style="font-family:open sans;position:absolute;width:100%;height:50px;margin-top:230px;border:1px solid #BDC3C7;background:#ECF0F1;">
+          <p style="margin:10px;font-size:20px;">Search&nbsp&nbsp<input type="text" name="search" style="width:62%;border-radius:2px;border:1px solid #BDC3C7;height:30px;font-family:open sans light;font-size:16px;" placeholder="Enter Key Word..."/>
+            <button style="cursor:pointer;position:absolute;border:none;border-radius:3px;height:34.4px;background:#BDC3C7;color:#fff;width:53px;margin-left:-5px;margin-top:0px;"><i class="material-icons">search</i></button>
+          </p>
+        </div>
+      
+
+        <a href="list.html" style="text-decoration:none;">
+        <div class="" style="position:absolute;font-family:open sans light;border:0px solid gray;margin-top:282px;width:100%;">
+
+          <div class="inner" style="float:left;width:100%;top:5px;left:0;right:0;border-bottom:1px solid #BDC3C7;height:68px;">
+         <p style="float:left;margin:10px;background:orange;border:1px solid orange;border-radius:24px;width:50px;height:51px;"><img src="img/icons/hotel.png" style="color:#fff;margin-left:6px;font-size:30px;margin-top:8px;"></p>
+         <p style="float:left;font-weight:bold;color:#000;font-size:20px;margin-left:12px;margin-top:20px;">Hotels&nbsp<font color="#BDC3C7">(200,000)</font><i class="material-icons" style="right:10px;position:absolute;">chevron_right</i></p>
+       </div>
+     </a>
 
 
+<a href="list.html" style="text-decoration:none;">
+          <div class="inner" style="float:left;width:100%;top:5px;left:0;right:0;border-bottom:1px solid #BDC3C7;height:68px;">
+         <p style="float:left;margin:10px;background:#27AE60;border:1px solid #27AE60;border-radius:24px;width:50px;height:51px;"><img src="img/icons/restaurant.png" style="color:#fff;margin-left:6px;font-size:30px;margin-top:8px;"></p>
+         <p style="float:left;font-weight:bold;color:#000;font-size:20px;margin-left:12px;margin-top:20px;">Restaurant&nbsp<font color="#BDC3C7">(129,800)</font><i class="material-icons" style="right:10px;position:absolute;">chevron_right</i></p>
+       </div>
+</a>
+
+<a href="list.html" style="text-decoration:none;">
+          <div class="inner" style="float:left;width:100%;top:5px;left:0;right:0;border-bottom:1px solid #BDC3C7;height:68px;">
+         <p style="float:left;margin:10px;background:#E74C3C;border:1px solid #E74C3C;border-radius:24px;width:50px;height:51px;"><img src="img/icons/sun.png" style="color:#fff;margin-left:6px;font-size:30px;margin-top:8px;"></p>
+         <p style="float:left;font-weight:bold;color:#000;font-size:20px;margin-left:12px;margin-top:20px;">Attractions&nbsp<font color="#BDC3C7">(148,800)</font><i class="material-icons" style="right:10px;position:absolute;">chevron_right</i></p>
+       </div>
+</a>
+
+<a href="list.html" style="text-decoration:none;">
+          <div class="inner" style="float:left;width:100%;top:5px;left:0;right:0;border-bottom:1px solid #BDC3C7;height:68px;">
+         <p style="float:left;margin:10px;background:#F1C40F;border:1px solid yellow;border-radius:24px;width:50px;height:51px;"><img src="img/icons/shop.png" style="color:#fff;margin-left:6px;font-size:30px;margin-top:8px;"></p>
+         <p style="float:left;font-weight:bold;color:#000;font-size:20px;margin-left:12px;margin-top:20px;">Shopping&nbsp<font color="#BDC3C7">(148,800)</font><i class="material-icons" style="right:10px;position:absolute;">chevron_right</i></p>
+       </div>
+</a>
 
 
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title"  style="background: url('http://mysaco.com/source/img/img3.jpg') center / cover;">
-    <h2 class="mdl-card__title-text">Welcome</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Mauris sagittis pellentesque lacus eleifend lacinia...
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Read more
-    </a>
-  </div>
-  <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
-  </div>
-</div>
-    </div>
-  </main>
+        </div>
+
+
+        <!-- Your content goes here -->
+
+      </div>
+
+
+    </section>
+
+    <!--Section Two-->
+    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content">
+
+Yo
+        <!-- Your content goes here -->
       </div>
     </section>
-    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-      <div class="page-content"><!-- Your content goes here --></div>
-    </section>
     <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-      <div class="page-content"><!--Content goes here --></div>
+      <div class="page-content">
+  Lol        
+        <!-- Your content goes here -->
+      </div>
     </section>
-  
+  </main>
 </div>
